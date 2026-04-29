@@ -1,0 +1,27 @@
+<script>
+function gonoVote(vote) {
+    let count = {};
+
+    vote.forEach(function(item) {
+        if (count[item]) {
+            count[item]++;
+        } else {
+            count[item] = 1;
+        }
+
+        if(count['ha']>count['na']){
+            console.log("Ha Wins ")
+        }else{
+            console.log("NA Wins")
+        }
+
+
+
+
+    });
+
+    return count;
+}
+
+console.log(gonoVote(['ha', 'na', 'ha', 'ha']));
+</script>

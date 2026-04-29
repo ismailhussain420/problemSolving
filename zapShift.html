@@ -1,0 +1,14 @@
+<script>
+    function ValidatingOtp(otp){
+        if(otp.startsWith("ph") && otp.length==8 && typeof otp === "string" ){
+              document.write("valid Otp")
+            
+        }else{
+            document.write("invalid")
+          
+        }
+
+    }
+
+    ValidatingOtp("ph678217")
+</script>

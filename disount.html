@@ -1,0 +1,16 @@
+<script>
+function newPrice(currentPrice,discount){
+ 
+
+    if (isNaN(currentPrice) ||isNaN(discount) && currentPrice < 1500 && discount<0 || discount>100){
+          document.write("SOMETHING WENT WRONG!")
+    
+    }else{
+        price_after_discount =(currentPrice*discount)/100;
+          document.write("Congratulations! Your Discount Price Is : "+ " "+price_after_discount)
+    
+
+    }
+  
+}
+newPrice("10000n",10);</script>

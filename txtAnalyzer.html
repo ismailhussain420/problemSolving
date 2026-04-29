@@ -1,0 +1,27 @@
+<script>
+function analyzeText(texts){
+     let output= {}
+    let breakinSen = texts.split(" ");
+    let longwords = "";
+   
+
+    breakinSen.forEach(function(itm){
+
+        if(itm.length > longwords.length){
+            longwords = itm;
+           
+           
+            
+        }
+
+    });
+
+    return {
+        word:longwords,
+        length:longwords.length
+    };
+}
+
+console.log(analyzeText("Hi how are you jhbjkbkjbjb"));
+console.log(output)
+</script>
